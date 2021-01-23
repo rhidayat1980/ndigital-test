@@ -53,6 +53,7 @@ another good example is https://github.com/marketplace/bridgecrew. but its a pai
 8. to secure my application? its a long answer actually, because security follow the layer, from infra layer to application layer. to secure our product we have to secure all layer by the way!
 
 9. i have a rule, monitoring is important, dont deploy any service if they dont have monitoring system. for metric i follow 4 golden rule from the SRE book created by google employee, traffict, error, latency and saturation.
+i like push based monitoring like newrelic, datadog or ELK since its free from networking problem. i just need to install the agent and boom, everything ready to monitor.
 
 10. Could you extend your solution to launch multiple instances of your app/tools? What
 would need to change to support this use case?
