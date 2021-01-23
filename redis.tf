@@ -2,6 +2,7 @@ resource "helm_release" "redis" {
   name       = "redis"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "redis"
+  version    = "12.6.3"
   namespace  = "ndigital"
 
   values = [
