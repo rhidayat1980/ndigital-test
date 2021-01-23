@@ -12,9 +12,8 @@ jobs:
     steps:
       - name: Clone repo
         uses: actions/checkout@main
-      
-      - name: tfsec
-        uses: actions/checkout@main
+              
+      - name: run tfsec 
         run: |
           tfsec ../
 
