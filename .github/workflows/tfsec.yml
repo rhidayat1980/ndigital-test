@@ -13,6 +13,10 @@ jobs:
 
       - name: Clone repo
         uses: actions/checkout@master
+      
+      - name: run tfsec 
+        run: |
+          tfsec ./
 
       - name: tfsec
         uses: tfsec/tfsec-sarif-action@master
@@ -26,6 +30,4 @@ jobs:
           # Path to SARIF file relative to the root of the repository
           sarif_file: tfsec.sarif   
               
-      - name: run tfsec 
-        run: |
-          tfsec ../
+      
