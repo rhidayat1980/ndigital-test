@@ -46,26 +46,3 @@ resource "kubernetes_service" "nginx" {
     }
   }
 }
-
-resource "kubernetes_ingress" "nginx" {
-  wait_for_load_balancer = true
-  metadata {
-    name = "nginx"
-    annotations = {
-      "kubernetes.io/ingress.class" = "nginx"
-    }
-  }
-  spec {
-    rule {
-      http {
-        path {
-          path = "/*"
-          backend {
-            service_name = kubernetes_service.nginx.metadata.0.name
-            service_port = 80
-          }
-        }
-      }
-    }
-  }
-}
