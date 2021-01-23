@@ -67,6 +67,8 @@ to reduce downtime, we can use deployment strategy inside k8s deployment object 
     yes, this is the first step before moving. the intention are to segregate, group or categorize everything by environment for example dev, staging and production for security and critical level, also to make our live easy as engineer. the next reason for me is to give engineer a confident by provide them a playground to test new thing.
 
 12. What sacrifices did you make due to time? Any improvement that you would add to make the system production ready?
+    design a good strategy before problem happen in production, normally i use game in my team, the purpose of this game is to increase the skill of my members, make them confident during release or troubleshooting time. 
 
 13. i use local terraform state for this repo, but on real scenario i use terraform backend storage like s3, dynamodb or gcs bucket.
+
 14. for collaboration i use runatlantis like in traveloka. for more info read this link: https://www.runatlantis.io/
