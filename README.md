@@ -67,3 +67,5 @@ to reduce downtime, we can use deployment strategy inside k8s deployment object 
 
 12. What sacrifices did you make due to time? Any improvement that you would add to make the system production ready?
 
+13. i use local terraform state for this repo, but on real scenario i use terraform backend storage like s3, dynamodb or gcs bucket.
+14. for collaboration i use runatlantis like in traveloka. for more info read this link: https://www.runatlantis.io/
